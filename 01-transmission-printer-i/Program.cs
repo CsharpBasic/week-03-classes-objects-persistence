@@ -1,12 +1,17 @@
-PrintTransmission("Calibration complete");
-PrintTransmission("Relay-7", "Signal acquired");
-
-static void PrintTransmission(string message)
+class Program
 {
-    // TODO
-}
+    static void Main()
+    {
+        PrintTransmission("Calibration complete");
+        PrintTransmission("Relay-7", "Signal acquired");
+    }
+    static void PrintTransmission(string message)
+    {
+        // TODO
+    }
 
-static void PrintTransmission(string sender, string message)
-{
-    // TODO
+    static void PrintTransmission(string sender, string message)
+    {
+        // TODO
+    }
 }

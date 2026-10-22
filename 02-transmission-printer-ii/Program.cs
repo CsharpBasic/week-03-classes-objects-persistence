@@ -1,16 +1,22 @@
-PrintTransmission("System ready");
-PrintTransmission("Dock", "Gate unlocked");
-
-// TODO: Kall også din tredje overload.
-
-static void PrintTransmission(string message)
+class Program
 {
-    Console.WriteLine($"[UNKNOWN] {message}");
-}
+    static void Main()
+    {
+        PrintTransmission("System ready");
+        PrintTransmission("Dock", "Gate unlocked");
 
-static void PrintTransmission(string sender, string message)
-{
-    Console.WriteLine($"[{sender}] {message}");
-}
+        // TODO: Kall også din tredje overload.
+    }
 
-// TODO: Lag tredje overload.
+    static void PrintTransmission(string message)
+    {
+        Console.WriteLine($"[UNKNOWN] {message}");
+    }
+
+    static void PrintTransmission(string sender, string message)
+    {
+        Console.WriteLine($"[{sender}] {message}");
+    }
+
+    // TODO: Lag tredje overload.
+}
